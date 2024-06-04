@@ -182,7 +182,39 @@ const ChartOne: React.FC = () => {
   },
       {
         name: 'Sleep Consistency',
-        data: [30, 25, 36, 30, 45, 35, 64, 52, 59, 36, 39, 51],
+        data: [
+            {"date": "2024-05-01", "sleep_consistency_score": 8},
+            {"date": "2024-05-02", "sleep_consistency_score": 6},
+            {"date": "2024-05-03", "sleep_consistency_score": 9},
+            {"date": "2024-05-04", "sleep_consistency_score": 7},
+            {"date": "2024-05-05", "sleep_consistency_score": 7},
+            {"date": "2024-05-06", "sleep_consistency_score": 5},
+            {"date": "2024-05-07", "sleep_consistency_score": 8},
+            {"date": "2024-05-08", "sleep_consistency_score": 9},
+            {"date": "2024-05-09", "sleep_consistency_score": 6},
+            {"date": "2024-05-10", "sleep_consistency_score": 7},
+            {"date": "2024-05-11", "sleep_consistency_score": 8},
+            {"date": "2024-05-12", "sleep_consistency_score": 6},
+            {"date": "2024-05-13", "sleep_consistency_score": 9},
+            {"date": "2024-05-14", "sleep_consistency_score": 7},
+            {"date": "2024-05-15", "sleep_consistency_score": 9},
+            {"date": "2024-05-16", "sleep_consistency_score": 5},
+            {"date": "2024-05-17", "sleep_consistency_score": 8},
+            {"date": "2024-05-18", "sleep_consistency_score": 9},
+            {"date": "2024-05-19", "sleep_consistency_score": 7},
+            {"date": "2024-05-20", "sleep_consistency_score": 5},
+            {"date": "2024-05-21", "sleep_consistency_score": 8},
+            {"date": "2024-05-22", "sleep_consistency_score": 10},
+            {"date": "2024-05-23", "sleep_consistency_score": 6},
+            {"date": "2024-05-24", "sleep_consistency_score": 7},
+            {"date": "2024-05-25", "sleep_consistency_score": 9},
+            {"date": "2024-05-26", "sleep_consistency_score": 5},
+            {"date": "2024-05-27", "sleep_consistency_score": 9},
+            {"date": "2024-05-28", "sleep_consistency_score": 7},
+            {"date": "2024-05-29", "sleep_consistency_score": 6},
+            {"date": "2024-05-30", "sleep_consistency_score": 9}
+          
+        ],
       },
     ],
   });
@@ -204,7 +236,7 @@ const ChartOne: React.FC = () => {
             </span>
             <div className="w-full">
               <p className="font-semibold text-primary">Sleep Duration</p>
-              <p className="text-sm font-medium">12.04.2022 - 12.05.2022</p>
+              <p className="text-sm font-medium">6-8 hours</p>
             </div>
           </div>
           <div className="flex min-w-47.5">
@@ -212,8 +244,8 @@ const ChartOne: React.FC = () => {
               <span className="block h-2.5 w-full max-w-2.5 rounded-full bg-secondary"></span>
             </span>
             <div className="w-full">
-              <p className="font-semibold text-secondary">Total Sales</p>
-              <p className="text-sm font-medium">12.04.2022 - 12.05.2022</p>
+              <p className="font-semibold text-secondary">Sleep Consistency Sales</p>
+              <p className="text-sm font-medium">1-10</p>
             </div>
           </div>
         </div>
