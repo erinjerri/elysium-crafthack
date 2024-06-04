@@ -1,0 +1,39 @@
+{
+    "sleep_score": {
+        "total_sleep_duration": 10.0,
+        "sleep_efficiency": 52.4,
+        "rem_sleep_duration": 23.0,
+        "deep_sleep_duration": 44.0,
+        "sleep_onset_latency": 23.9,
+        "wake_after_sleep_onset": 60.0,
+        "sleep_consistency": 71.8
+    },
+    "nutrition_score": {
+        "macronutrient_balance": {
+            "protein": 40.0,
+            "fat": 40.0,
+            "carbs": 53.2
+        },
+        "micronutrient_intake": 53.8,
+        "caloric_intake_vs_expenditure": 50.0,
+        "hydration_levels": 35.0,
+        "meal_timing": 50.0,
+        "food_quality": 60.0
+    },
+    "workout_score": {
+        "exercise_frequency": 27.0,
+        "exercise_intensity": 55.0,
+        "exercise_variety": 47.0,
+        "recovery_time": 67.0,
+        "workout_duration": 43.7,
+        "progress_tracking": 81.3,
+        "consistency": 55.2
+    },
+    "genetic_risk_score": {
+        "family_medical_history": 51.7,
+        "genetic_testing_results": 61.1,
+        "environmental_and_lifestyle_factors": 50.0,
+        "preventative_measures": 50.0,
+        "genetic_counseling": 68.9
+    }
+}
