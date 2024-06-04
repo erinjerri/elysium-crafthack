@@ -131,7 +131,7 @@ const options: ApexOptions = {
       },
     },
     min: 0,
-    max: 100,
+    max: 10,
   },
 };
 
@@ -147,74 +147,13 @@ const ChartOne: React.FC = () => {
     series: [
       {
         name: 'Sleep Duration Data',
-        data: [
-      {"date": "2024-05-01", "sleep_duration_hours": 7.5},
-      {"date": "2024-05-02", "sleep_duration_hours": 6.8},
-      {"date": "2024-05-03", "sleep_duration_hours": 8.2},
-      {"date": "2024-05-04", "sleep_duration_hours": 7.0},
-      {"date": "2024-05-05", "sleep_duration_hours": 7.3},
-      {"date": "2024-05-06", "sleep_duration_hours": 6.5},
-      {"date": "2024-05-07", "sleep_duration_hours": 7.8},
-      {"date": "2024-05-08", "sleep_duration_hours": 8.0},
-      {"date": "2024-05-09", "sleep_duration_hours": 6.9},
-      {"date": "2024-05-10", "sleep_duration_hours": 7.2},
-      {"date": "2024-05-11", "sleep_duration_hours": 7.6},
-      {"date": "2024-05-12", "sleep_duration_hours": 6.7},
-      {"date": "2024-05-13", "sleep_duration_hours": 7.9},
-      {"date": "2024-05-14", "sleep_duration_hours": 7.1},
-      {"date": "2024-05-15", "sleep_duration_hours": 8.3},
-      {"date": "2024-05-16", "sleep_duration_hours": 6.4},
-      {"date": "2024-05-17", "sleep_duration_hours": 7.5},
-      {"date": "2024-05-18", "sleep_duration_hours": 8.1},
-      {"date": "2024-05-19", "sleep_duration_hours": 7.0},
-      {"date": "2024-05-20", "sleep_duration_hours": 6.6},
-      {"date": "2024-05-21", "sleep_duration_hours": 7.7},
-      {"date": "2024-05-22", "sleep_duration_hours": 8.4},
-      {"date": "2024-05-23", "sleep_duration_hours": 6.8},
-      {"date": "2024-05-24", "sleep_duration_hours": 7.3},
-      {"date": "2024-05-25", "sleep_duration_hours": 7.9},
-      {"date": "2024-05-26", "sleep_duration_hours": 6.5},
-      {"date": "2024-05-27", "sleep_duration_hours": 8.0},
-      {"date": "2024-05-28", "sleep_duration_hours": 7.2},
-      {"date": "2024-05-29", "sleep_duration_hours": 6.9},
-      {"date": "2024-05-30", "sleep_duration_hours": 8.1} ]
-
+        data: [ 7.5, 6.8, 8.2, 7.0, 7.3, 6.5, 7.8, 8.0, 6.9, 7.2, 7.6, 6.7, 7.9, 7.1, 8.3, 6.4, 7.5,
+      8.1, 7.0, 6.6, 7.7, 8.4, 6.8, 7.3, 7.9, 6.5, 8.0, 7.2, 6.9, 8.1
+   ]
   },
       {
-        name: 'Sleep Consistency',
-        data: [
-            {"date": "2024-05-01", "sleep_consistency_score": 8},
-            {"date": "2024-05-02", "sleep_consistency_score": 6},
-            {"date": "2024-05-03", "sleep_consistency_score": 9},
-            {"date": "2024-05-04", "sleep_consistency_score": 7},
-            {"date": "2024-05-05", "sleep_consistency_score": 7},
-            {"date": "2024-05-06", "sleep_consistency_score": 5},
-            {"date": "2024-05-07", "sleep_consistency_score": 8},
-            {"date": "2024-05-08", "sleep_consistency_score": 9},
-            {"date": "2024-05-09", "sleep_consistency_score": 6},
-            {"date": "2024-05-10", "sleep_consistency_score": 7},
-            {"date": "2024-05-11", "sleep_consistency_score": 8},
-            {"date": "2024-05-12", "sleep_consistency_score": 6},
-            {"date": "2024-05-13", "sleep_consistency_score": 9},
-            {"date": "2024-05-14", "sleep_consistency_score": 7},
-            {"date": "2024-05-15", "sleep_consistency_score": 9},
-            {"date": "2024-05-16", "sleep_consistency_score": 5},
-            {"date": "2024-05-17", "sleep_consistency_score": 8},
-            {"date": "2024-05-18", "sleep_consistency_score": 9},
-            {"date": "2024-05-19", "sleep_consistency_score": 7},
-            {"date": "2024-05-20", "sleep_consistency_score": 5},
-            {"date": "2024-05-21", "sleep_consistency_score": 8},
-            {"date": "2024-05-22", "sleep_consistency_score": 10},
-            {"date": "2024-05-23", "sleep_consistency_score": 6},
-            {"date": "2024-05-24", "sleep_consistency_score": 7},
-            {"date": "2024-05-25", "sleep_consistency_score": 9},
-            {"date": "2024-05-26", "sleep_consistency_score": 5},
-            {"date": "2024-05-27", "sleep_consistency_score": 9},
-            {"date": "2024-05-28", "sleep_consistency_score": 7},
-            {"date": "2024-05-29", "sleep_consistency_score": 6},
-            {"date": "2024-05-30", "sleep_consistency_score": 9}
-          
-        ],
+        name: 'Sleep Consistency Data',
+        data: [8, 6, 9, 7, 7, 5, 8, 9, 6, 7, 8, 6, 9, 7, 9, 8, 9, 7, 5, 8, 10, 6, 7, 9, 5, 9, 7, 6, 9],
       },
     ],
   });
@@ -244,8 +183,8 @@ const ChartOne: React.FC = () => {
               <span className="block h-2.5 w-full max-w-2.5 rounded-full bg-secondary"></span>
             </span>
             <div className="w-full">
-              <p className="font-semibold text-secondary">Sleep Consistency Sales</p>
-              <p className="text-sm font-medium">1-10</p>
+              <p className="font-semibold text-secondary">Sleep Consistency Data</p>
+              <p className="text-sm font-medium">On the Scale 1-10</p>
             </div>
           </div>
         </div>
