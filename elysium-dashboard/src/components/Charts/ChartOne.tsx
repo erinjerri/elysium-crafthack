@@ -181,7 +181,7 @@ const ChartOne: React.FC = () => {
 
   },
       {
-        name: 'Product Two',
+        name: 'Sleep Consistency',
         data: [30, 25, 36, 30, 45, 35, 64, 52, 59, 36, 39, 51],
       },
     ],
