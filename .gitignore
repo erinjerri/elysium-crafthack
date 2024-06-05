@@ -1,0 +1,22 @@
+# Python Backend App
+*.pyc
+__pycache__/
+*.log
+env/
+venv/
+pip-selfcheck.json
+node_modules/
+build/
+dist/
+staticfiles/
+media/
+manage.py
+db.sqlite3
+.env
+
+# JavaScript Frontend App
+node_modules/
+package-lock.json
+npm-debug.log
+dist/
+coverage/
