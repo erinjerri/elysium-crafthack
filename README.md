@@ -17,3 +17,16 @@ Then run the server with:
 python main.py
 ```
 We can go to the browser and open http://localhost:9100/docs to see the API documentation and test the endpoints.
+
+# Frontend UI
+
+First, set up virtual environment and install dependencies:
+```
+cd./ui
+npm install
+```
+
+Then run the server with:
+```
+npm run start
+```

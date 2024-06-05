@@ -13,6 +13,7 @@ media/
 manage.py
 db.sqlite3
 .env
+.DS_Store
 
 # JavaScript Frontend App
 node_modules/
